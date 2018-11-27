@@ -1,12 +1,13 @@
 package com.company;
 
-public class Salad implements MenuItem
+public class Trio implements MenuItem
 {
     private String name;
     private double price;
-    public Salad( String name, double price)
+
+    public Trio(String name, double price)
     {
-        this.name =  name;
+        this.name = name;
         this.price = price;
     }
     public String getName()
@@ -16,5 +17,9 @@ public class Salad implements MenuItem
     public double getPrice()
     {
         return price;
+    }
+    public String toString()
+    {
+        String out
     }
 }
