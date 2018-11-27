@@ -25,19 +25,12 @@ public class Trio implements MenuItem
         }
         if (salad.getPrice() > sandwich.getPrice() && drink.getPrice() > sandwich.getPrice())
         {
-            Price = sandwich.getPrice() + drink.getPrice();
+            Price = salad.getPrice() + drink.getPrice();
         }
-        if (sandwich.getPrice() > salad.getPrice() && drink.getPrice() > salad.getPrice())
+        if (sandwich.getPrice() > drink.getPrice() && salad.getPrice() > drink.getPrice())
         {
-            Price = sandwich.getPrice() + drink.getPrice();
-        }if (sandwich.getPrice() > drink.getPrice() && salad.getPrice() > drink.getPrice())
-    {
-        Price = sandwich.getPrice() + salad.getPrice();
-    }
+            Price = sandwich.getPrice() + salad.getPrice();
+        }
         return Price;
-    }
-    public String toString()
-    {
-        String out
     }
 }
